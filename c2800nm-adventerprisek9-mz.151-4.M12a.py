@@ -30,7 +30,6 @@ if __name__ == '__main__':
     parser.add_argument("community", type=str, help="community string")
     parser.add_argument("shellcode", action='store', type=str, help='shellcode to run (in hex)')
     args = parser.parse_args()
-    print(type(args))
 
 
     sh_buf = args.shellcode.replace(' ','').decode('hex')
